@@ -4,6 +4,8 @@
   "description": "Deploy AWS lambda function with Travis CI.",
   "main": "handler.js",
   "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,5 +28,10 @@
   "bugs": {
     "url": "https://github.com/gAmadorH/travis-ci-test/issues"
   },
-  "homepage": "https://github.com/gAmadorH/travis-ci-test#readme"
+  "homepage": "https://github.com/gAmadorH/travis-ci-test#readme",
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
 }
