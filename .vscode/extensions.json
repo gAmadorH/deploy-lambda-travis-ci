@@ -4,6 +4,7 @@
     "dbaeumer.vscode-eslint",
     "editorconfig.editorconfig",
     "felixrieseberg.vsc-travis-ci-status",
+    "orta.vscode-jest",
     "streetsidesoftware.code-spell-checker",
     "vscode-icons-team.vscode-icons"
   ]
