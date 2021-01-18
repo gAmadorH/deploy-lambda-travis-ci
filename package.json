@@ -1,6 +1,6 @@
 {
   "name": "travis-ci-test",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Deploy AWS lambda function with Travis CI.",
   "main": "handler.js",
   "scripts": {
