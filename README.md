@@ -1,3 +1,3 @@
 # travis-ci-test
 
-A simple Travis CI test.
+Deploy AWS lambda function with Travis CI.

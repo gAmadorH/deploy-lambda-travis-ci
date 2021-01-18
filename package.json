@@ -1,0 +1,30 @@
+{
+  "name": "travis-ci-test",
+  "version": "0.1.0",
+  "description": "Deploy AWS lambda function with Travis CI.",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gAmadorH/travis-ci-test.git"
+  },
+  "keywords": [
+    "aws",
+    "aws-lambda",
+    "example",
+    "hello-world",
+    "lambda",
+    "node",
+    "nodejs",
+    "travis",
+    "travis-ci"
+  ],
+  "author": "Gonzalo Amador <gamadorh93@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gAmadorH/travis-ci-test/issues"
+  },
+  "homepage": "https://github.com/gAmadorH/travis-ci-test#readme"
+}
