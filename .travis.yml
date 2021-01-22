@@ -20,5 +20,6 @@ deploy:
   runtime: nodejs12.18
   function_name: deploy-lambda-travis
   handler_name: hello
+  role: arn:aws:iam::673233482676:role/service-role/lambda_basic_execution
   on:
     branch: main
