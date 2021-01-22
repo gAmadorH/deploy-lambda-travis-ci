@@ -19,6 +19,6 @@ deploy:
   region: us-west-1
   runtime: nodejs12.18
   function_name: deploy-lambda-travis
-  handler_name: handler
+  handler_name: hello
   on:
     branch: main
