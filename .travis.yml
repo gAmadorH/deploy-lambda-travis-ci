@@ -17,7 +17,7 @@ jobs:
 deploy:
   provider: lambda
   region: us-west-1
-  runtime: nodejs12.18
+  runtime: nodejs12.x
   function_name: deploy-lambda-travis
   handler_name: hello
   role: arn:aws:iam::673233482676:role/service-role/lambda_basic_execution
