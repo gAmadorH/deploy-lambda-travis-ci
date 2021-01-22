@@ -1,6 +1,6 @@
-const { hello } = require('../handler');
+const { hello } = require('../index');
 
-describe('basic handler test', () => {
+describe('basic index test', () => {
   test('should return data', async () => {
     const event = {};
     const actualValue = await hello(event);
