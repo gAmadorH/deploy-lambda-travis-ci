@@ -8,6 +8,6 @@ describe('basic index test', () => {
     expect(actualValue).toHaveProperty('statusCode', 200);
     expect(actualValue).toHaveProperty('body');
     expect(actualValue.body).toHaveProperty('message', 'Deploy Lambda function using Travis CI!!!');
-    expect(actualValue.body).toHaveProperty('input', {});
+    expect(actualValue.body).toHaveProperty('input', JSON.stringify({}, null, 2));
   });
 });

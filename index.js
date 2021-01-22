@@ -6,7 +6,7 @@ module.exports.hello = async (event) => {
     statusCode: 200,
     body: {
       message: 'Deploy Lambda function using Travis CI!!!',
-      input: event,
+      input: JSON.stringify(event, null, 2),
     },
   };
 };
