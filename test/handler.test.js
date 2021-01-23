@@ -5,9 +5,6 @@ describe('basic index test', () => {
     const event = {};
     const actualValue = await hello(event);
 
-    expect(actualValue).toHaveProperty('statusCode', 200);
-    expect(actualValue).toHaveProperty('body');
-    expect(actualValue.body).toHaveProperty('message', 'Deploy Lambda function using Travis CI!!!');
-    expect(actualValue.body).toHaveProperty('input', JSON.stringify({}, null, 2));
+    expect(actualValue).toBe('Deploy Lambda function using Travis CI!!!');
   });
 });
