@@ -1,5 +1,6 @@
 {
   "recommendations": [
+    "abumalick.vscode-nvm",
     "davidanson.vscode-markdownlint",
     "dbaeumer.vscode-eslint",
     "editorconfig.editorconfig",
