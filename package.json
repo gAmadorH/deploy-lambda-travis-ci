@@ -7,7 +7,7 @@
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "test": "jest",
-    "test:cover": "npm test -- --coverage"
+    "test:cover": "npm test -- --coverage && cat ./tests/coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,7 @@
   },
   "homepage": "https://github.com/gAmadorH/travis-ci-test#readme",
   "devDependencies": {
+    "coveralls": "^3.1.0",
     "eslint": "^7.18.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
