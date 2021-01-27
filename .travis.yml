@@ -16,7 +16,7 @@ jobs:
     - stage: lint
       script: npm run lint
     - stage: test
-      script: npm test:cover
+      script: npm run test:cover
 
 notifications:
   webhooks: https://coveralls.io/webhook
