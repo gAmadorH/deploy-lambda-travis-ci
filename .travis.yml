@@ -17,9 +17,8 @@ jobs:
       script: npm run lint
     - stage: test
       script: npm run test:cover
-
-notifications:
-  webhooks: https://coveralls.io/webhook
+      notifications:
+        webhooks: https://coveralls.io/webhook
 
 deploy:
   provider: lambda
