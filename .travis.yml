@@ -3,6 +3,10 @@ cache: npm
 git:
   depth: 3
 
+env:
+  global:
+    - COVERALLS_PARALLEL=true
+
 stages:
   - lint
   - test
@@ -12,7 +16,10 @@ jobs:
     - stage: lint
       script: npm run lint
     - stage: test
-      script: npm test
+      script: npm test:cover
+
+notifications:
+  webhooks: https://coveralls.io/webhook
 
 deploy:
   provider: lambda
