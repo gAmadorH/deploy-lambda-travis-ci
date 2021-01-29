@@ -9,9 +9,11 @@ stages:
 
 jobs:
   include:
-    - stage: lint
+    - name: Lint code
+      stage: lint
       script: npm run lint
-    - stage: test
+    - name: Run tests
+      stage: test
       script: npm run coveralls
 # deploy:
 #   provider: lambda
