@@ -7,7 +7,8 @@
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "test": "jest",
-    "test:cover": "jest --coverage && cat ./coverage/lcov.info | coveralls"
+    "test:cover": "npm test -- --coverage",
+    "coveralls": "npm run test:cover && cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
