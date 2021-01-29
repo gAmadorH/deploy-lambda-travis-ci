@@ -3,10 +3,6 @@ cache: npm
 git:
   depth: 3
 
-env:
-  global:
-    - COVERALLS_PARALLEL=true
-
 stages:
   - lint
   - test
