@@ -6,6 +6,8 @@ git:
 stages:
   - lint
   - test
+  - name: deploy
+    if: branch = main
 
 jobs:
   include:
@@ -15,12 +17,13 @@ jobs:
     - name: Run tests
       stage: test
       script: npm run coveralls
-# deploy:
-#   provider: lambda
-#   region: us-west-1
-#   runtime: nodejs12.x
-#   function_name: deploy-lambda-travis
-#   handler_name: hello
-#   role: arn:aws:iam::673233482676:role/service-role/lambda_basic_execution
-#   on:
-#     branch: main
+    - name: Deploy to AWS Lambda
+      stage: deploy
+      script: skip
+      deploy: &lambda
+        provider: lambda
+        region: us-west-1
+        runtime: nodejs12.x
+        function_name: deploy-lambda-travis
+        handler_name: hello
+        role: arn:aws:iam::673233482676:role/service-role/lambda_basic_execution
