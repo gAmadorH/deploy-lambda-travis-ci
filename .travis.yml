@@ -12,7 +12,7 @@ jobs:
     - stage: lint
       script: npm run lint
     - stage: test
-      script: npm run test:cover
+      script: npm run coveralls
 # deploy:
 #   provider: lambda
 #   region: us-west-1
