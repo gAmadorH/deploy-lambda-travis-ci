@@ -1,4 +1,4 @@
-# travis-ci-test
+# deploy-lambda-travis-ci
 
 [![Build Status](https://travis-ci.com/gAmadorH/deploy-lambda-travis-ci.svg?branch=main)](https://travis-ci.com/gAmadorH/deploy-lambda-travis-ci)
 [![Coverage Status](https://coveralls.io/repos/github/gAmadorH/deploy-lambda-travis-ci/badge.svg?branch=main)](https://coveralls.io/github/gAmadorH/deploy-lambda-travis-ci?branch=main)
