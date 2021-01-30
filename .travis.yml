@@ -8,8 +8,6 @@ stages:
   - test
   - name: deploy
     if: branch = main
-env:
-  - NOTIFICATIONS_SLACK=""
 
 jobs:
   include:
