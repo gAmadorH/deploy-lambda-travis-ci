@@ -8,6 +8,8 @@ stages:
   - test
   - name: deploy
     if: branch = main
+env:
+  - NOTIFICATIONS_SLACK=""
 
 jobs:
   include:
@@ -16,7 +18,8 @@ jobs:
       script: npm run lint
     - name: Run tests
       stage: test
-      script: npm run coveralls
+      script: npm run test:cover
+      after_success: npm run coveralls
     - name: Deploy to AWS Lambda
       stage: deploy
       script: skip
@@ -29,3 +32,10 @@ jobs:
         role: arn:aws:iam::673233482676:role/service-role/lambda_basic_execution
         on:
           branch: main
+
+notifications:
+  email: false
+  slack:
+    if: branch = master
+    rooms:
+      - $NOTIFICATIONS_SLACK
