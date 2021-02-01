@@ -33,7 +33,6 @@ jobs:
 notifications:
   email: false
   slack:
-    if: branch = master
     rooms:
       # eslint-disable-next-line max-len
       - secure: "DYgXnt80jeN8q2yEHtjM1iKDXSCPsINgJDDPqOhhrSEq0BqS0aKzVv9jAz2dZTfl2B7VoRht5aH6WCTtJ3bwxSxLbDXf9pxrFDM3ogMhwJxQLFm4tNbRNfMb2LhgsCDiRymMVh0VlvHSVh50o+0mzRB1AQdLwy4uRR7soafNAJcXg8iFM0rDVyRTCRwlKFsAn7fsY4B+34/SD6f5H//r25UKCPHT3izdYBnBIBT+papku5gcOOnrOAOjUfnWF1yZVjsrAO/mwk73QfCvm1XcsqvJam1a4L7hgjLd/hfohe81IbMFV3+DHmeF0PPRxR01wTH+MIy/ubMpYGi1mtjTQjyLv7sNStSJdm0nLnpuEau+ydBd5Ms46O8GgcZAys61mgQcTkVP6IB6JJVb4V6JnTKl+BNN1JS210JpM6uZ5T/eih+4AUBSX3lE+auIsXQzuFyKZLmi5ifz5O+zrPOE0+ULtN7Zr/GqoKz/n7yfZmp8nW8ANPFI3STtIyJc9sXW1hNswUiHAUQ5SOq3jtyRBhYr3xWYJXztF3kTu9HoCI11qA4RuVetbVcuiU33bMdLgqdCcGuDD2qdeKBsj603k4Gcu0AcMc4ixpwTB1fmGoIHcqQigRAM+Njm4G8aTDa9puzBBAGkMQBjrUJFgTUFX6dISBF/j+XwTRj7krG8WCU="
